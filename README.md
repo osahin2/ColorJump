@@ -1,1 +1,1 @@
-# ColorJump
+# ColorJump Game
