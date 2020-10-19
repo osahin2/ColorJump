@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private GameObject whiteBoy;
+    private GameObject character;
     private Vector3 camFirstPos;
     private Vector3 camLastPos;
 
     private void Awake()
     {
-        whiteBoy = GameObject.FindGameObjectWithTag("Player");
+        character = GameObject.FindGameObjectWithTag("Player");
 
-        camFirstPos = transform.position - whiteBoy.transform.position;
+        camFirstPos = transform.position - character.transform.position;
     }
 
     private void FixedUpdate()
     {
-        camLastPos = camFirstPos + whiteBoy.transform.position;
+        camLastPos = camFirstPos + character.transform.position;
         transform.position = Vector3.Lerp(transform.position, camLastPos, 5f * Time.deltaTime);
     }
 }

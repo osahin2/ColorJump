@@ -7,10 +7,10 @@ public class CharacterController : MonoBehaviour
 
     private const float JUMP_AMOUNT = 8f;
 
-    public Animator anim;
     public float speedX;
     public float speedZ;
 
+    private Animator anim;
     private Rigidbody rb;
     private float horizontal;
     private bool isGround = true;

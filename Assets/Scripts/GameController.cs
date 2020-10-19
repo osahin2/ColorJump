@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public Button pauseButton;
-    public Text tapToStartText;
-    public Text tapToRestartText;
-    public Button options;
-    public Text gameOverText;
-    public Text scoreText;
-    public Text bestScoreText;
+    [SerializeField] private Button pauseButton;
+    [SerializeField] private Text tapToStartText;
+    [SerializeField] private Text tapToRestartText;
+    [SerializeField] private Button options;
+    [SerializeField] private Text gameOverText;
+    [SerializeField] private Text scoreText;
+    [SerializeField] private Text bestScoreText;
 
     CharacterController character;
     ObjectPooler pooler;
